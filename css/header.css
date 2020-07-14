@@ -21,7 +21,20 @@
     align-items: center;
 }
 
+.header__header-column .fa-cog:hover{
+    animation: rotateCog 1.5s infinite;
+}
+
 .header .header__back-btn{
     font-size: 22px;
     margin-right: 20px;
+}
+
+@keyframes rotateCog{
+    0%{
+        transform: rotateZ(0);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
 }
